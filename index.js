@@ -2,6 +2,7 @@ const getHrefs = require('./lib/getHrefs');
 const getChampData = require('./lib/getChampData');
 const downloadSkins = require('./lib/downloadSkins');
 const getSkinData = require('./lib/getSkinData');
+const generateFinalFile = require('./lib/generateFinalFile');
 const fs = require('fs');
 const fsPromises = require('fs').promises;
 const path = require('path');
@@ -50,7 +51,9 @@ const path = require('path');
     }
 
     // Downloads all the data as downloads/skin/:champ-name/skin-name/file
-    await downloadSkins(dataToDownload);
+    // await downloadSkins(dataToDownload);
+
+    await generateFinalFile(skinHrefs);
 
     console.log('process done');
   } catch (err) {
