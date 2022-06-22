@@ -13,7 +13,7 @@
     "async-request": "^1.2.0",
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
-    "got": "^10.7.0",
+    "got": "^11.8.5",
     "image-downloader": "^3.5.0",
     "p-map": "^4.0.0",
     "request": "^2.88.2"
